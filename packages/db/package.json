@@ -1,0 +1,17 @@
+{
+  "name": "@acme/db",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "build": "tsc -p tsconfig.json",
+    "dev": "pnpm db:push"  
+  },
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "prisma": "^5.17.0"
+  }
+}
